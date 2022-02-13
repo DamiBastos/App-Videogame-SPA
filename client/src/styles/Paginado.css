@@ -1,0 +1,24 @@
+.paginacion {
+	display:flex;
+    justify-content: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+
+.paginacion .btn {
+	padding:10px 18px;
+	color:#fff;
+	background:#024959;
+	text-decoration: none;
+}
+
+.paginacion .btn:hover {
+	background:#037E8C;
+}
+
+.paginacion .btn .active {
+	background:#037E8C;
+	font-weight:bold;
+}

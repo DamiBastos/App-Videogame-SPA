@@ -1,0 +1,101 @@
+.bodycard{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.bodyCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 10vh;
+  background: #232427;
+}
+
+.bodyCard  .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 5px .5;
+}
+
+.bodyCard  .container .card {
+  position: relative;
+  min-width: 190px;
+  height: 250px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 5px;
+  transition: 0.5s;
+}
+
+.bodyCard  .container .card:nth-child(1) .box .content a {
+  background: #2196f3;
+}
+
+.bodyCard  .container .card:nth-child(2) .box .content a {
+  background: #e91e63;
+}
+
+.bodyCard  .container .card:nth-child(3) .box .content a {
+  background: #23c186;
+}
+
+.bodyCard  .container .card .box {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  background: #2a2b2f;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.bodyCard  .container .card .box:hover {
+  transform: translateY(-50px);
+}
+
+.bodyCard .container .card .box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.bodyCard  .container .card .box .content {
+  padding: 50px;
+  text-align: center;
+}
+
+
+.bodyCard .container .card .box .content h3 {
+  font-size: .9rem;
+  color: #fff;
+  z-index: 1;
+  transition: 0.5s;
+  margin-bottom: 7px;
+}
+
+.bodyCard  .container .card .box .content h5 {
+  font-size: .7rem;
+  font-weight: 150;
+  color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+
